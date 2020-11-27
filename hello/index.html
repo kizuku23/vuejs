@@ -7,9 +7,12 @@
   </head>
   <body>
     <div id="app">
-      <hello-component></hello-component>
-      <hello-component></hello-component>
-      <hello-component></hello-component>
+      <p>
+        {{ message }}
+      </p>
+      <p>
+        <a v-if="toggle" v-bind:href="url">Vue.js</a>
+      </p>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
