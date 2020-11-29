@@ -7,11 +7,22 @@
   </head>
   <body>
     <div id="app">
-      <h2>
-        v-cloak
-      </h2>
-      <p v-cloak>
+      <p>
         {{ message }}
+      </p>
+      <p>
+        {{ number + 1 }}
+      </p>
+      <p>
+        {{ message.split('').reverse().join('') }}
+      </p>
+      <p>
+        {{ ok ? 'YES' : 'NO' }}
+      </p>
+      <p>
+         <!-- {{ var x = 1 }} -->
+         <!-- {{ if(ok) { return message } }} -->
+         {{ ok ? message : '' }}
       </p>
     </div>
 
