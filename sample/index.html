@@ -8,7 +8,7 @@
   <body>
     <div id="app">
       <p>
-        Hello <span v-bind:class="classObject">Vue.js!</span>
+        Hello <span v-bind:class="[isLarge ? largeClass : '', dangerClass]">Vue.js!</span>
       </p>
     </div>
 
