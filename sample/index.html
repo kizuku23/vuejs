@@ -7,11 +7,17 @@
   </head>
   <body>
     <div id="app">
-      <p v-if="toggle">
-        YES
+      <p v-if="color === 'red'">
+        Stop
+      </p>
+      <p v-else-if="color === 'yellow'">
+        Caution
+      </p>
+      <p v-else-if="color === 'blue'">
+        Go
       </p>
       <p v-else>
-        NO
+        Not red/yellow/blue
       </p>
     </div>
 
