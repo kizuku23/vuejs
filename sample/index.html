@@ -8,9 +8,9 @@
   <body>
     <div id="app">
       <p>
-        {{ counter }}
+        {{ message }}
       </p>
-      <button v-on:click="clickHandler">
+      <button v-on:click="clickHandler($event, 'Vue.js!')">
         Click!
       </button>
     </div>
