@@ -1,8 +1,6 @@
 var app = new Vue({
   el: '#app',
-  methods: {
-    clickHandler: function() {
-      alert('clicked!')
-    }
+  data: {
+    message: 'Hello Vue.js!'
   }
 })
