@@ -4,8 +4,11 @@ var app = new Vue({
     message: ''
   },
   methods: {
+    clear: function() {
+      this.message = ''
+    },
     clickHandler: function() {
-      this.message = new Date().toLocaleTimeString()
+      alert('shift + click')
     }
   }
 })
